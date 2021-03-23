@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
+    font-weight: bold;
   }
   section {
     padding: 100px;
@@ -157,10 +158,23 @@
   
   
   .contact {
-    background: rgb(148, 153, 153);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    background: url(https://images.pexels.com/photos/2249527/pexels-photo-2249527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: right;
+    
+    
   }
-  .formBx {
-    min-width: 60%;
+  .contact h3{
+      color:white;
+      font-weight:bold;
+      
+  }
+  .formbox {
+    margin-left: 200px;
+    text-align: center;
     
   }
   .formBx form {
@@ -168,7 +182,7 @@
     flex-direction: column;
   }
   .formBx form h3, .contactInfo {
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -323,18 +337,13 @@
     .service .content .serviceBx {
       margin: 10px; 
     }
-    .work .content .workBx {
-      width: 100%;
-      padding: 10px;
-    }
+    
     .testimonial .content .testimonialBx {
       max-width: calc(100% - 20px);
       padding: 40px 20px;
       margin: 10px;
     }
-    .testimonial .content .testimonialBx h3 {
-      margin-top: 20px;
-    }  
+     
     .contactInfo {
       margin: 20px 0;
     }
@@ -351,3 +360,50 @@
       padding: 100px 20px;
     }
   }
+
+
+  form { max-width:420px; margin:50px auto; }
+
+  .feedback-input {
+    color:rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: white;;
+    border:2px solid #0382a8;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #0382a8; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#0382a8;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#1d0eee; }
+
+  
